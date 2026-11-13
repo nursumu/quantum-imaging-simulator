@@ -1,0 +1,59 @@
+<svg viewBox="0 0 640 430" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;font-family:Helvetica,Arial,sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#13294B"/>
+    </marker>
+    <style>
+      .lbl{font-size:10.5px;fill:#1E2430}
+      .ttl{font-size:12px;font-weight:bold;fill:#13294B}
+      .box{fill:#F2F4F7;stroke:#13294B;stroke-width:1.2}
+      .smp{fill:#FCE9DF;stroke:#eb6834;stroke-width:1.2}
+      .det{fill:#13294B}
+      .beam{stroke:#2a78d6;stroke-width:2.2;fill:none}
+      .beam2{stroke:#1baf7a;stroke-width:2.2;fill:none}
+      .elec{stroke:#5B6472;stroke-width:1.2;stroke-dasharray:4 3;fill:none}
+    </style>
+  </defs>
+  <rect x="0" y="0" width="640" height="430" fill="#FFFFFF"/>
+  <!-- Channel 1 -->
+  <text x="8" y="18" class="ttl">Kanal 1 · Coherent intensity</text>
+  <rect x="10" y="30" width="70" height="34" rx="3" class="box"/><text x="45" y="51" text-anchor="middle" class="lbl">Laser</text>
+  <path d="M80 47 H200" class="beam" marker-end="url(#ar)"/><text x="140" y="42" text-anchor="middle" class="lbl">U_in = A₀</text>
+  <ellipse cx="220" cy="47" rx="18" ry="22" class="smp"/><text x="220" y="84" text-anchor="middle" class="lbl">cell t(x,y)</text>
+  <path d="M238 47 H330" class="beam" marker-end="url(#ar)"/>
+  <rect x="330" y="30" width="110" height="34" rx="3" class="box"/><text x="385" y="45" text-anchor="middle" class="lbl">ASM H(fx,fy,z)</text><text x="385" y="58" text-anchor="middle" class="lbl">+ pupil (NA)</text>
+  <path d="M440 47 H520" class="beam" marker-end="url(#ar)"/>
+  <rect x="520" y="27" width="16" height="40" class="det"/><text x="575" y="45" text-anchor="middle" class="lbl">camera</text><text x="575" y="58" text-anchor="middle" class="lbl">Poisson N(i,j)</text>
+
+  <!-- Channel 2 -->
+  <text x="8" y="118" class="ttl">Kanal 2 · Classical correlation (split pseudo-thermal light)</text>
+  <rect x="10" y="150" width="70" height="34" rx="3" class="box"/><text x="45" y="171" text-anchor="middle" class="lbl">Laser</text>
+  <path d="M80 167 H105" class="beam"/>
+  <rect x="105" y="148" width="40" height="38" rx="19" class="box"/><text x="125" y="164" text-anchor="middle" class="lbl">rot.</text><text x="125" y="176" text-anchor="middle" class="lbl">diffuser</text>
+  <path d="M145 167 H175" class="beam"/>
+  <rect x="175" y="155" width="24" height="24" class="box" transform="rotate(45 187 167)"/><text x="168" y="198" text-anchor="middle" class="lbl">BS</text>
+  <path d="M199 167 H255" class="beam" marker-end="url(#ar)"/><text x="228" y="160" text-anchor="middle" class="lbl">signal</text>
+  <ellipse cx="275" cy="167" rx="18" ry="22" class="smp"/>
+  <path d="M293 167 H330" class="beam" marker-end="url(#ar)"/>
+  <rect x="330" y="150" width="110" height="34" rx="3" class="box"/><text x="385" y="171" text-anchor="middle" class="lbl">ASM + pupil</text>
+  <path d="M440 167 H520" class="beam" marker-end="url(#ar)"/><rect x="520" y="147" width="16" height="40" class="det"/><text x="560" y="164" class="lbl">I_s</text>
+  <path d="M187 179 V230 H330" class="beam2" marker-end="url(#ar)"/><text x="250" y="224" text-anchor="middle" class="lbl">reference (no sample)</text>
+  <rect x="330" y="213" width="110" height="34" rx="3" class="box"/><text x="385" y="234" text-anchor="middle" class="lbl">identical optics</text>
+  <path d="M440 230 H520" class="beam2" marker-end="url(#ar)"/><rect x="520" y="210" width="16" height="40" class="det"/><text x="560" y="234" class="lbl">I_r</text>
+  <path d="M545 187 V210" class="elec"/><text x="600" y="200" text-anchor="middle" class="lbl">⟨ΔI_s ΔI_r⟩</text>
+
+  <!-- Channel 3 -->
+  <text x="8" y="285" class="ttl">Kanal 3 · Entangled photons (SPDC) + coincidence detection</text>
+  <rect x="10" y="318" width="70" height="34" rx="3" class="box"/><text x="45" y="333" text-anchor="middle" class="lbl">Pump</text><text x="45" y="345" text-anchor="middle" class="lbl">405 nm</text>
+  <path d="M80 335 H110" stroke="#7b4fd6" stroke-width="2.2" marker-end="url(#ar)"/>
+  <rect x="110" y="320" width="30" height="30" class="box"/><text x="125" y="364" text-anchor="middle" class="lbl">BBO</text>
+  <path d="M140 330 L200 305 H255" class="beam" marker-end="url(#ar)"/><text x="150" y="312" class="lbl">signal</text>
+  <ellipse cx="275" cy="305" rx="18" ry="20" class="smp"/>
+  <path d="M293 305 H330" class="beam" marker-end="url(#ar)"/>
+  <rect x="330" y="288" width="110" height="34" rx="3" class="box"/><text x="385" y="309" text-anchor="middle" class="lbl">ASM + pupil</text>
+  <path d="M440 305 H520" class="beam" marker-end="url(#ar)"/><rect x="520" y="285" width="16" height="40" class="det"/><text x="528" y="280" text-anchor="middle" class="lbl">signal cam</text>
+  <path d="M140 340 L200 375 H520" class="beam2" marker-end="url(#ar)"/><text x="300" y="368" class="lbl">idler 810 nm (reference arm, no sample)</text>
+  <rect x="520" y="355" width="16" height="40" class="det"/><text x="528" y="410" text-anchor="middle" class="lbl">idler cam</text>
+  <path d="M536 305 H600 V375 H536" class="elec"/>
+  <rect x="566" y="325" width="68" height="30" rx="3" class="box"/><text x="600" y="338" text-anchor="middle" class="lbl">coincidence</text><text x="600" y="350" text-anchor="middle" class="lbl">Δt window</text>
+</svg>

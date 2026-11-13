@@ -1,0 +1,52 @@
+{
+ "config": {
+  "wavelength_um": 0.81,
+  "n_medium": 1.335,
+  "NA": 0.4,
+  "z_um": 0.0,
+  "A0": 1.0,
+  "grid": 128,
+  "fov_um": 64.0,
+  "bin_factor": 2,
+  "cell_radius_um": 14.0,
+  "cell_aspect": 0.8,
+  "nucleus_radius_um": 5.5,
+  "thickness_um": 5.0,
+  "membrane_um": 0.3,
+  "mu_cyto": 0.02,
+  "mu_nuc": 0.1,
+  "mu_mem": 0.6,
+  "mu_gran": 0.3,
+  "n_cyto": 1.355,
+  "n_nuc": 1.375,
+  "n_mem": 1.435,
+  "n_gran": 1.385,
+  "texture_amp": 0.35,
+  "n_granules": 30,
+  "cell_seed": 7,
+  "photons": 100000.0,
+  "qe": 0.7,
+  "background": 1.0,
+  "dark": 0.0,
+  "budget_mode": "dose",
+  "repeats": 3,
+  "seed": 2026,
+  "dx_um": 0.5,
+  "detector_pixel_um": 1.0,
+  "n_det": 64,
+  "k0_rad_per_um": 7.757018897752575,
+  "coherent_cutoff_cyc_per_um": 0.49382716049382713
+ },
+ "ch2": {
+  "frames": 100,
+  "speckle_um": 2.5
+ },
+ "ch3": {
+  "sigma_D": 0.8,
+  "mu": 0.1
+ },
+ "repeats": 3,
+ "runtime_s": 153,
+ "numpy": "2.5.3",
+ "python": "3.13.18"
+}
